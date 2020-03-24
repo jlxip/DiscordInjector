@@ -20,7 +20,7 @@ A python script is offered to automatically patch your Discord installation and 
 * Close Discord.
 * Go to `APPDATA/discord/VERSION/modules/discord_desktop_core`, where `APPDATA` is the same as explained above, and `VERSION` is currently `0.0.10`, but may change in the future.
 * Make a backup of `core.asar`.
-* Unpack the ASAR file: `asar extract core.asar extracted`. You might need to install `asar` it with `npm install -g asar`.
+* Unpack the ASAR file: `asar extract core.asar extracted`. You might need to install `asar` with `npm install -g asar`.
 * Go to `extracted/app`.
 * Append the contents of `DiscordInjector.js` at the end of the file `mainScreenPreload.js`.
 * Repack the ASAR file: `asar pack extracted core.asar`.
