@@ -31,4 +31,4 @@ You have the functions `DiscordInjector_getExtensionsDir` (which returns the ext
 They are loaded asynchronously, so you cannot rely on another one being loaded before yours.
 
 ## Credits
-The SVG of the syringe comes from ![here](https://www.flaticon.com/free-icon/injection_1086932), resized with ![this tool](https://www.iloveimg.com/resize-image/resize-svg) and compressed with ![this other one](https://vecta.io/nano).
+The SVG of the syringe comes from [here](https://www.flaticon.com/free-icon/injection_1086932), resized with [this tool](https://www.iloveimg.com/resize-image/resize-svg) and compressed with [this other one](https://vecta.io/nano).
