@@ -8,7 +8,9 @@
 ## The what
 DiscordInjector is a patch for the desktop Discord client which lets you inject any node code (_extensions_) in the application. You can do anything with it from modifying the CSS to hooking the message send action to modify your messages, opening a new window (practically creating a new application inside Discord), or read/write local files.
 
-Once DiscordInjector is installed, an icon of a syringe will appear at the top right corner of the window. Click it, and you'll se a list of loaded extensions. The extensions are `.js` files stored at `APPDATA/discord-injector`, where `APPDATA` is `%APPDATA%` on Windows and `~/.config` on GNU/Linux.
+Once DiscordInjector is installed, an icon of a syringe will appear at the top right corner of the window. Click it, and you'll se a list of loaded extensions. The extensions are `.js` files stored at `APPDATA/discord-injector`, where `APPDATA` is `%APPDATA%` on Windows and `XDG_CONFIG_HOME` or `~/.config` on GNU/Linux.
+
+The environment variable `DISCORD_DIR` can be set to `discordptb` to patch the public test build.
 
 ## The why
 I guess it's fun? Extending the capabilities of an application is always nice.
