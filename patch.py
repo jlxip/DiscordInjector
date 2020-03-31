@@ -9,7 +9,7 @@ END = BASE % 'end'
 def getAppdata():
 	x = platform.system()
 	if x == 'Linux':
-		return os.getenv('HOME')+'/.config'
+		return os.getenv('XDG_CONFIG_HOME', os.getenv('HOME')+'/.config')
 	elif x == 'Windows':
 		return os.getenv('APPDATA')
 	else:
@@ -24,10 +24,9 @@ def getVersion(core_path):
 
 if __name__ == '__main__':
 	print('\tDiscordInjector patch')
-	print('\nMake sure Discord is closed and hit return.')
-	input()
+	print('\nMake sure Discord is closed.')
 
-	core_path = os.path.join(getAppdata(), 'discord')
+	core_path = os.path.join(getAppdata(), os.getenv('DISCORD_DIR', 'discord'))
 	version = getVersion(core_path)
 
 	if not version:
